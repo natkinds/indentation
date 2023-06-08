@@ -1,0 +1,16 @@
+.grey-block {
+    background-color: #F1F1F1;
+    border-radius: 10px;
+    padding: 25px 45px;
+}
+
+.grey-block__title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 53px;
+}
+
+.grey-block__list-item:not(:last-child) {
+    margin-bottom: 10px;
+}

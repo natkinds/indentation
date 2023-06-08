@@ -1,0 +1,15 @@
+.article {
+    padding: 60px 0 50px;
+}
+
+.article__title {
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 72px;
+}
+
+.article__subtitle {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 43px;
+}
