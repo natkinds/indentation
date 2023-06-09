@@ -13,15 +13,13 @@
 
 <body>
     <article class="article">
-        <section class="section">
-            <div class="container">
-                <h1 class="section__item article__title">Отступы в вёрстке: margin и padding</h1>
+        <div class="section container">
+            <h1 class="section__item article__title">Отступы в вёрстке: margin и padding</h1>
 
-                <p class="section__item">В этой статье я рассмотрю самые популярные "стандартные" решения для сохранения смысла и хорошей читаемости вашего кода. Если точнее — речь пойдет об основных правилах организации отступов. Они сильно влияют на общую функциональность кода и, если всё сделано верно, позволяют легко вносить изменения в любую его часть. При этом другие части кода продолжат нормально работать.</p>
+            <p class="section__item">В этой статье я рассмотрю самые популярные "стандартные" решения для сохранения смысла и хорошей читаемости вашего кода. Если точнее — речь пойдет об основных правилах организации отступов. Они сильно влияют на общую функциональность кода и, если всё сделано верно, позволяют легко вносить изменения в любую его часть. При этом другие части кода продолжат нормально работать.</p>
 
-                <p class="section__item">Как это часто бывает, знание базовых принципов поможет проявить гибкость и выйти за их пределы. Эти знания особенно важны для начинающих, но также будут полезным напоминанием и для более опытных верстальщиков. Итак, поговорим о фундаментальных основах работы с отступами в вёрстке.</p>
-            </div>
-        </section>
+            <p class="section__item">Как это часто бывает, знание базовых принципов поможет проявить гибкость и выйти за их пределы. Эти знания особенно важны для начинающих, но также будут полезным напоминанием и для более опытных верстальщиков. Итак, поговорим о фундаментальных основах работы с отступами в вёрстке.</p>
+        </div>
 
         <section class="section content">
             <div class="container grey-block">
@@ -48,7 +46,7 @@
                 <h3 class="section__item article__subtitle" id="first">Отступ задается от предыдущего элемента к следующему: от первого ко второму, сверху вниз, слева направо.</h3>
 
                 <div class="section__item section-wrapper">
-                    <img class="section-wrapper__image section-wrapper__left-item" src="img/img-1.jpg" alt="">
+                    <img class="section-wrapper__image section-wrapper__left-item" src="img/img-1.jpg" alt="Снимок экрана с примером отступов margin">
 
                     <div class="section-wrapper__text-wrapper">
                         <p class="section__item"><b>ВАЖНО:</b> <i>margin</i> всегда задают от предыдущего элемента к следующему.</p>
@@ -70,7 +68,7 @@
                         <p class="section__item">Изначально элемент статичен, а его положение может меняться только под воздействием свойств других блоков или свойств родителя.</p>
                     </div>
 
-                    <img class="section-wrapper__image" src="img/img-2.jpg" alt="">
+                    <img class="section-wrapper__image" src="img/img-2.jpg" alt="Снимок экрана с примером отступов padding">
                 </div>
             </div>
         </section>
@@ -81,14 +79,14 @@
 
                 <p class="section__item">Вообще, margin задают исключительно между соседними элементами DOM-дерева. Для примера, посмотрите на этот список:</p>
 
-                <img class="section__item" src="img/img-3.jpg" alt="">
+                <img class="section__item" src="img/img-3.jpg" alt="Снимок экрана с фрагментом html-кода">
 
-                <img class="section__item section__center-image" src="img/img-4.jpg" alt="">
+                <img class="section__item section__center-image" src="img/img-4.jpg" alt="Снимок экрана с примером работы margin">
     
                 <p class="section__item">Отступ делают за счёт соседних элементов, а не дочерних:</p>
 
                 <figure class="section__item section__image-wrapper">
-                    <img src="img/img-5.jpg" alt="">
+                    <img src="img/img-5.jpg" alt="Снимок экрана с html-кодом и результатом применения margin">
 
                     <figcaption class="section__image-desc"><b>ВАЖНО:</b> здесь <i>.list-item</i> — последний возможный элемент в котором мы задаём отступ, чтобы разделить списки.</figcaption>
                 </figure>
@@ -97,11 +95,11 @@
     
                 <p class="section__item">Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.</p>
     
-                <img class="section__item section__center-image" src="img/img-6.jpg" alt="">
+                <img class="section__item section__center-image" src="img/img-6.jpg" alt="Снимок экрана с фрагментом html-кода">
     
                 <p class="section__item">В случае с заголовком, если ему необходим отступ сверху, последним элементом будет <i>section</i>. Именно для него задается <i>padding-top</i>, а не <i>div</i> с классом <i>container</i>. Свойства <i>margin</i>, которые стоят по умолчанию необходимо обнулить.</p>
     
-                <img class="section__item section__center-image" src="img/img-7.jpg" alt="">
+                <img class="section__item section__center-image" src="img/img-7.jpg" alt="Снимок экрана с html-кодом и результатом применения padding">
     
                 <p class="section__item">Это необходимо для более простого поиска отступов в будущем — для вас или того, кто будет верстать после вас. Кроме того, возможны серьёзные проблемы при динамическом дублировании или выводе вёрстки с нестандартной структурой отступов.</p>
             </div>
@@ -115,27 +113,27 @@
 
                 <p class="section__item">Между рецептами расстояние одинаковое. Можно заметить, что и до следующего блока расстояние такое же.</p>
 
-                <img class="section__item section__center-image" src="img/img-8.jpg" alt="">
+                <img class="section__item section__center-image" src="img/img-8.jpg" alt="Снимок экрана с примером отступа между текстовыми блоками">
     
                 <p class="section__item">В соответствии со вторым принципом: последний <i>margin</i> обнуляется, а нижний отступ задаётся через <i>padding</i> для <i>section</i>. Я чаще всего задаю <i>padding</i> для секции с обоих сторон, если расстояние между секциями 100px задаю секциям <i>padding-top:50px</i> и <i>padding-bottom:50px</i>.</p>
     
-                <img class="section__item section__center-image" src="img/img-9.jpg" alt="">
+                <img class="section__item section__center-image" src="img/img-9.jpg" alt="Снимок экрана с примером использования отступа margin">
 
-                <img class="section__item" src="img/img-10.jpg" alt="">
+                <img class="section__item" src="img/img-10.jpg" alt="Снимок экрана с фрагментом html-кода">
     
                 <p class="section__item">Для большего понимания рассмотрим другой пример, который часто встречается на практике:</p>
     
-                <img class="section__item" src="img/img-11.jpg" alt="">
+                <img class="section__item" src="img/img-11.jpg" alt="Снимок экрана с логотипом и меню сайта компании Methed">
 
-                <img class="section__item section__center-image" src="img/img-12.jpg" alt="">
+                <img class="section__item section__center-image" src="img/img-12.jpg" alt="Снимок экрана с фрагментом html-кода">
     
                 <p class="section__item">Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска. Отступы между пунктами меню задаются так:</p>
     
-                <img class="section__item section__center-image" src="img/img-13.jpg" alt="">
+                <img class="section__item section__center-image" src="img/img-13.jpg" alt="Снимок экрана с фрагментом html-кода">
     
                 <p class="section__item">Советую использовать псевдоклассы :last-child чаще других, например так:</p>
     
-                <img class="section__item section__center-image" src="img/img-14.jpg" alt="">
+                <img class="section__item section__center-image" src="img/img-14.jpg" alt="Снимок экрана с фрагментом html-кода">
             </div>
         </section>
 
