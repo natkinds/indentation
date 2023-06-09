@@ -6,23 +6,7 @@
     margin-bottom: 30px;
 }
 
-.section__item_margin_right {
-    margin-right: 35px;
-}
-
-.section__text-wrapper {
-    display: inline-block;
-    vertical-align: top;
-    width: 480px;   
-}
-
-.section__image {
-    display: inline-block;
-    vertical-align: top;
-    width: 560px;
-}
-
-.section__image_center {
+.section__center-image {
     display: block;
     margin: 0 auto;
 }

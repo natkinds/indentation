@@ -1,0 +1,15 @@
+.section-wrapper__left-item {
+    margin-right: 35px;
+}
+
+.section-wrapper__image {
+    display: inline-block;
+    vertical-align: top;
+    width: 560px;
+}
+
+.section-wrapper__text-wrapper {
+    display: inline-block;
+    vertical-align: top;
+    width: 480px;   
+}

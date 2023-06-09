@@ -47,10 +47,10 @@
             <div class="container">
                 <h3 class="section__item article__subtitle" id="first">Отступ задается от предыдущего элемента к следующему: от первого ко второму, сверху вниз, слева направо.</h3>
 
-                <div class="section__item">
-                    <img class="section__image section__item_margin_right" src="img/img-1.jpg" alt="">
+                <div class="section__item section-wrapper">
+                    <img class="section-wrapper__image section-wrapper__left-item" src="img/img-1.jpg" alt="">
 
-                    <div class="section__text-wrapper">
+                    <div class="section-wrapper__text-wrapper">
                         <p class="section__item"><b>ВАЖНО:</b> <i>margin</i> всегда задают от предыдущего элемента к следующему.</p>
 
                         <p class="section__item">Свойство <i>margin</i> необходимо только для того, чтобы отодвинуть своего соседа справа или снизу, поэтому используется <i>margin-right</i> и <i>margin-bottom</i>.</p>
@@ -61,8 +61,8 @@
                     </div>
                 </div>
     
-                <div class="section__item">
-                    <div class="section__text-wrapper section__item_margin_right">
+                <div class="section__item section-wrapper">
+                    <div class="section-wrapper__text-wrapper section-wrapper__left-item">
                         <p class="section__item">Отступ внутри блока сверху или слева реализуется через padding-top и padding-left родителя.</p>
 
                         <p class="section__item">Отступы, как правило, делают в направлении от предыдущего элемента к следующему. Так элемент не будет толкать сам себя.</p>
@@ -70,7 +70,7 @@
                         <p class="section__item">Изначально элемент статичен, а его положение может меняться только под воздействием свойств других блоков или свойств родителя.</p>
                     </div>
 
-                    <img class="section__image" src="img/img-2.jpg" alt="">
+                    <img class="section-wrapper__image" src="img/img-2.jpg" alt="">
                 </div>
             </div>
         </section>
@@ -83,7 +83,7 @@
 
                 <img class="section__item" src="img/img-3.jpg" alt="">
 
-                <img class="section__item section__image_center" src="img/img-4.jpg" alt="">
+                <img class="section__item section__center-image" src="img/img-4.jpg" alt="">
     
                 <p class="section__item">Отступ делают за счёт соседних элементов, а не дочерних:</p>
 
@@ -97,11 +97,11 @@
     
                 <p class="section__item">Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.</p>
     
-                <img class="section__item" src="img/img-6.jpg" alt="">
+                <img class="section__item section__center-image" src="img/img-6.jpg" alt="">
     
                 <p class="section__item">В случае с заголовком, если ему необходим отступ сверху, последним элементом будет <i>section</i>. Именно для него задается <i>padding-top</i>, а не <i>div</i> с классом <i>container</i>. Свойства <i>margin</i>, которые стоят по умолчанию необходимо обнулить.</p>
     
-                <img class="section__item" src="img/img-7.jpg" alt="">
+                <img class="section__item section__center-image" src="img/img-7.jpg" alt="">
     
                 <p class="section__item">Это необходимо для более простого поиска отступов в будущем — для вас или того, кто будет верстать после вас. Кроме того, возможны серьёзные проблемы при динамическом дублировании или выводе вёрстки с нестандартной структурой отступов.</p>
             </div>
@@ -115,11 +115,11 @@
 
                 <p class="section__item">Между рецептами расстояние одинаковое. Можно заметить, что и до следующего блока расстояние такое же.</p>
 
-                <img class="section__item section__image_center" src="img/img-8.jpg" alt="">
+                <img class="section__item section__center-image" src="img/img-8.jpg" alt="">
     
                 <p class="section__item">В соответствии со вторым принципом: последний <i>margin</i> обнуляется, а нижний отступ задаётся через <i>padding</i> для <i>section</i>. Я чаще всего задаю <i>padding</i> для секции с обоих сторон, если расстояние между секциями 100px задаю секциям <i>padding-top:50px</i> и <i>padding-bottom:50px</i>.</p>
     
-                <img class="section__item section__image_center" src="img/img-9.jpg" alt="">
+                <img class="section__item section__center-image" src="img/img-9.jpg" alt="">
 
                 <img class="section__item" src="img/img-10.jpg" alt="">
     
@@ -127,15 +127,15 @@
     
                 <img class="section__item" src="img/img-11.jpg" alt="">
 
-                <img class="section__item section__image_center" src="img/img-12.jpg" alt="">
+                <img class="section__item section__center-image" src="img/img-12.jpg" alt="">
     
                 <p class="section__item">Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска. Отступы между пунктами меню задаются так:</p>
     
-                <img class="section__item section__image_center" src="img/img-13.jpg" alt="">
+                <img class="section__item section__center-image" src="img/img-13.jpg" alt="">
     
                 <p class="section__item">Советую использовать псевдоклассы :last-child чаще других, например так:</p>
     
-                <img class="section__item section__image_center" src="img/img-14.jpg" alt="">
+                <img class="section__item section__center-image" src="img/img-14.jpg" alt="">
             </div>
         </section>
 
